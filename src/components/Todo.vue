@@ -31,7 +31,7 @@
       </div>
     </section>
     <div class="todo-edit-section" v-show="isEditing">
-      <div class='todo-edit-section__form'>
+      <div class='todo-edit-section_form'>
         <div class='todo-edit-section_form_field'>
           <label>Title</label>
           <input type='text' v-model="todo.title" >
@@ -129,6 +129,14 @@
   .todo-details-section_buttons .todo-details-section_buttons_completed {
     width: 6em;
     padding: 0 0 0 1em;
+  }
+
+  .todo-edit-section_form {
+    display: flex;
+  }
+
+  .todo-edit-section_form div {
+    padding: 0 .5em 0 0;
   }
 
 </style>

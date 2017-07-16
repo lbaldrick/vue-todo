@@ -13,7 +13,6 @@
       </todo>
     </ul>
 
-
     <div class="todo-list-add-section" v-show="isAddingTask">
       <div class='todo-list-add-section_form'>
         <div class='todo-list-add-section_form_field'>
@@ -97,6 +96,14 @@
 
   .todo-list .todo:nth-child(odd) {
     background-color: #daf5da
+  }
+
+  .todo-list-add-section_form {
+    display: flex;
+  }
+
+  .todo-list-add-section_form div {
+    padding: 0 .5em 0 0;
   }
 </style>
 
